@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    
+    <servlet>
+        <servlet-name>ReportLostDog</servlet-name>
+        <servlet-class>ReportLostDog</servlet-class>    
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportLostDog</servlet-name>
+        <url-pattern>/ReportLostDog</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Person</servlet-name>
+        <servlet-class>Person</servlet-class>    
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Person</servlet-name>
+        <url-pattern>/Person</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ReportFoundDog</servlet-name>
+        <servlet-class>ReportFoundDog</servlet-class>    
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportFoundDog</servlet-name>
+        <url-pattern>/ReportFoundDog</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AboutShelter</servlet-name>
+        <servlet-class>AboutShelter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AboutShelter</servlet-name>
+        <url-pattern>/AboutShelter</url-pattern>        
+    </servlet-mapping>        
+    
+    <servlet>
+        <servlet-name>AboutZone</servlet-name>
+        <servlet-class>AboutZone</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AboutZone</servlet-name>
+        <url-pattern>/AboutZone</url-pattern>
+    </servlet-mapping>        
+    
+</web-app>
